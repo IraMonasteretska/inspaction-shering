@@ -46,17 +46,19 @@ h6 {
     padding: 0;
 }
 
-h2{
+h2 {
     font-size: 48px;
     font-weight: 500;
     font-family: "Prompt", sans-serif;
 }
-h3{
+
+h3 {
     font-size: 36px;
     font-weight: 500;
     font-family: "Prompt", sans-serif;
 }
-p{
+
+p {
     font-size: 16px;
 }
 
@@ -83,7 +85,7 @@ body {
     overflow: hidden;
 }
 
-.sectbtn{
+.sectbtn {
     padding: 12px 43px;
     height: 54px;
     display: inline-flex;
@@ -97,16 +99,18 @@ body {
     font-weight: 500;
     line-height: 110%;
     transition: .4s;
-    &:hover{
+
+    &:hover {
         background-color: $mainblue;
         color: #FFFFFF;
-        path{
+
+        path {
             fill: $mainblue;
         }
     }
 }
 
-.bluebtn{
+.bluebtn {
     padding: 12px 40px;
     height: 54px;
     display: inline-flex;
@@ -120,18 +124,22 @@ body {
     transition: .4s;
     color: #FFFFFF;
     border: 1px solid $mainblue;
-    svg{
+
+    svg {
         margin-right: 6px;
         width: 15px;
         height: 15px;
-        path{
+
+        path {
             transition: .4s;
         }
     }
-    &:hover{
+
+    &:hover {
         background-color: rgba($mainblue, .15);
         color: $mainblue;
-        path{
+
+        path {
             fill: $mainblue;
         }
     }
@@ -146,5 +154,21 @@ body {
     .container-xl,
     .container-xxl {
         max-width: 1444px;
+    }
+}
+
+@media (max-width: 1399.8px) {
+    h2 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 575.8px) {
+    .sectbtn {
+        width: 100%!important;
+    }
+
+    .bluebtn {
+        width: 100%!important;
     }
 }

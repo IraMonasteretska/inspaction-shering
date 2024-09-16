@@ -157,12 +157,11 @@
 }
 
 .bluesect__inner {
-    padding: 80px;
+    padding: 80px 75px;
     border-radius: 20px;
     background-color: rgba($mainblue, .45);
 }
 .bluesect__img{
-    padding-left: 50px;
     img{
         max-width: 546px;
         width: 100%;
@@ -195,3 +194,44 @@
 
 
 // --- === end bluesect section === --- //
+
+
+//  --- === ADAPTIVE === --- //
+
+@media (max-width: 1399.8px) {
+    .heroscreen__content .title {
+        font-size: 52px;
+        margin-bottom: 40px;
+    }
+    .heroscreen__inner {
+        height: 520px;
+    }
+    .heroscreen__search input {
+        width: 580px;
+        height: 58px;
+    }
+    .heroscreen__search form {
+        position: relative;
+        width: 580px;
+    }
+    .heroscreen__search button {
+        width: 54px;
+        height: 54px;
+    }
+    .info {
+        padding: 100px 0;
+    }
+    .bluesect__content {
+        padding-left: 50px;
+    }
+    .bluesect__button {
+        margin-left: 50px;
+    }
+    .bluesect__inner {
+        padding: 70px 40px;
+    }
+    .bluesect {
+        padding-bottom: 100px;
+    }
+    
+}

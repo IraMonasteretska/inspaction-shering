@@ -122,3 +122,50 @@
         margin-left: 10px;
     }
 }
+
+//  --- === ADAPTIVE === --- //
+
+@media (max-width: 1399.8px) {
+    .header__logo {
+        margin-right: 55px;
+    }
+    .header__menu li+li {
+        margin-left: 45px;
+    }
+    .header__search form input {
+        width: 360px;
+        height: 40px;
+    }
+    .header__search form button {
+        height: 34px;
+        width: 34px;
+    }
+    .header__buttons a {
+        height: 40px;
+    }
+    .header__menu {
+        margin: 0 50px 0 0;
+    }
+}
+
+@media (max-width: 1199.8px) {
+    .header__search form input {
+        width: 300px;
+    }
+    .header__logo {
+        margin-right: 40px;
+    }
+    .header__menu li+li {
+        margin-left: 30px;
+    }
+    .header__menu {
+        margin: 0 40px 0 0;
+    }
+    .header__buttons a {
+        height: 40px;
+        padding: 12px 30px;
+    }
+    .heroscreen__content .title {
+        font-size: 46px;
+    }
+}
