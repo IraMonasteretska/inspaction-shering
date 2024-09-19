@@ -27,7 +27,8 @@
         line-height: 150%;
     }
 }
-.footer__copy.mobile{
+
+.footer__copy.mobile {
     display: none;
 }
 
@@ -50,7 +51,8 @@
         background-size: cover;
     }
 }
-.footer__social.mobile{
+
+.footer__social.mobile {
     display: none;
 }
 
@@ -127,13 +129,55 @@
     .footer__logo {
         margin-bottom: 20px;
     }
-    .footer__copy.mobile{
+
+    .footer__copy.mobile {
         display: block;
         margin: 0;
     }
-    .footer__social.mobile{
+
+    .footer__social.mobile {
         margin: 30px 0;
         display: block;
+    }
+
+    .footer__inner {
+        text-align: center;
+    }
+
+    .footer__descr {
+        margin: 0 auto 40px;
+    }
+
+    .footer__menu {
+        text-align: center;
+
+        ul {
+            display: block;
+            margin-bottom: 20px;
+
+            li {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .footer__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__buttons a+a {
+        margin-top: 0;
+    }
+
+    .footer__buttons a {
+        margin: 0 20px;
+    }
+
+    .footer__social ul {
+        justify-content: center;
     }
 
 }
@@ -142,19 +186,53 @@
     .footer {
         padding: 50px 0 40px;
     }
-    .footer__logo{
+
+    .footer__logo {
         text-align: center;
     }
+
     .footer__menu ul {
-       justify-content: center;
-    }
-    .footer__social ul{
         justify-content: center;
     }
-    .footer__copy p{
+
+    .footer__social ul {
+        justify-content: center;
+    }
+
+    .footer__copy p {
         text-align: center;
     }
+
     .footer__descr p {
         text-align: center;
     }
+
+    .footer__logo {
+        margin-bottom: 0;
+
+        img {
+            width: 150px;
+        }
+    }
+
+    .footer__descr {
+        margin-bottom: 25px;
+    }
+
+    .footer__menu ul {
+        margin-bottom: 0;
+    }
+
+    .footer__buttons {
+        justify-content: space-between;
+
+        a {
+            height: 46px;
+            width: 100%;
+            max-width: calc(50% - 10px);
+            margin: 0;
+        }
+    }
+
+
 }

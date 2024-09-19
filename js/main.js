@@ -1,5 +1,9 @@
+$(document).ready(function(){
 
-$( function() {
+    $('.searchbtn').click(function(){
+        $(this).next('form').toggle();
+    });
+
 
 
 });

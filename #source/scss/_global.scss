@@ -163,6 +163,12 @@ body {
     }
 }
 
+@media (max-width: 1199.8px) {
+    h2 {
+        font-size: 36px;
+    }
+}
+
 @media (max-width: 575.8px) {
     .sectbtn {
         width: 100%!important;
@@ -171,4 +177,15 @@ body {
     .bluebtn {
         width: 100%!important;
     }
+
+    .main {
+        padding-top: 70px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+
+
 }
