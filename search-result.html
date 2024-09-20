@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspaction Shering</title>
+    <link rel="icon" type="image/x-icon" href="img/general/favicon.png">
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="header__leftsect">
+                            <a href="#" class="header__logo">
+                                <img src="img/general/logo.svg" alt="logo">
+                            </a>
+                            <div class="header__search">
+                                <span class="searchbtn">
+                                    <img src="img/general/search.svg" alt="search">
+                                </span>
+                                <form action="">
+                                    <input type="text" placeholder="City, neighborhood or ZIP code">
+                                    <button>
+                                        <img src="img/general/search.svg" alt="search">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mobmenu">
+                        <button class="closemenu">
+                            <img src="img/general/close.png" alt="close">
+                        </button>
+                        <div class="header__rightsect">
+                            <div class="header__nav">
+                                <ul>
+                                    <li><a href="#">Name 1</a></li>
+                                    <li><a href="#">Name 2</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__btns">
+                                <a href="#" class="lightblue-btn">
+                                    Refer
+                                </a>
+                                <a href="#" class="blue-btn">
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.75 8.625C13.5842 8.625 13.4253 8.69085 13.3081 8.80806C13.1908 8.92527 13.125 9.08424 13.125 9.25V11.8831C13.1245 12.3449 12.9408 12.7877 12.6143 13.1143C12.2877 13.4408 11.8449 13.6245 11.3831 13.625H3.61688C3.15505 13.6245 2.71229 13.4408 2.38573 13.1143C2.05917 12.7877 1.8755 12.3449 1.875 11.8831V9.25C1.875 9.08424 1.80915 8.92527 1.69194 8.80806C1.57473 8.69085 1.41576 8.625 1.25 8.625C1.08424 8.625 0.925268 8.69085 0.808058 8.80806C0.690848 8.92527 0.625 9.08424 0.625 9.25V11.8831C0.625827 12.6764 0.941307 13.4369 1.50221 13.9978C2.06312 14.5587 2.82363 14.8742 3.61688 14.875H11.3831C12.1764 14.8742 12.9369 14.5587 13.4978 13.9978C14.0587 13.4369 14.3742 12.6764 14.375 11.8831V9.25C14.375 9.08424 14.3092 8.92527 14.1919 8.80806C14.0747 8.69085 13.9158 8.625 13.75 8.625Z"
+                                            fill="white" />
+                                        <path
+                                            d="M4.19176 5.94188L6.87489 3.25875V11.125C6.87489 11.2908 6.94074 11.4497 7.05795 11.5669C7.17516 11.6842 7.33413 11.75 7.49989 11.75C7.66565 11.75 7.82462 11.6842 7.94183 11.5669C8.05904 11.4497 8.12489 11.2908 8.12489 11.125V3.25875L10.808 5.94188C10.9259 6.05573 11.0838 6.11872 11.2476 6.1173C11.4115 6.11588 11.5683 6.05015 11.6841 5.93427C11.8 5.81839 11.8658 5.66163 11.8672 5.49775C11.8686 5.33388 11.8056 5.17601 11.6918 5.05813L7.94176 1.30813C7.82456 1.19096 7.66562 1.12514 7.49989 1.12514C7.33416 1.12514 7.17522 1.19096 7.05801 1.30813L3.30801 5.05813C3.19416 5.17601 3.13117 5.33388 3.13259 5.49775C3.13402 5.66163 3.19975 5.81839 3.31563 5.93427C3.43151 6.05015 3.58826 6.11588 3.75214 6.1173C3.91601 6.11872 4.07389 6.05573 4.19176 5.94188Z"
+                                            fill="white" />
+                                    </svg>
+                                    Upload
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menubtn">
+                    <img src="img/general/menu.png" alt="menu">
+                </div>
+            </div>
+            <div class="menubg"></div>
+        </header>
+
+        <main class="main">
+
+            <div class="searchressect">
+                <div class="container">
+                    <div class="breadcrumbsbox">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>Search result</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="searchcontent">
+                    <div class="mapwrapper">
+                        
+                    </div>
+                    <div class="container">
+                        <div class="searchitems-wrapper">
+                            <div class="row">
+                                <div class="col-lg-6 offset-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <a href="#" class="searchitem">
+                                                <div class="searchitem-slider">
+                                                    <div class="swiper mySwiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/searchresult/slide1.jpg" alt="img">
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/searchresult/slide1.jpg" alt="img">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-pagination"></div>
+                                                        <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="searchitem__descr">
+                                                    <p class="price">$1234.00</p>
+                                                    <p class="address">
+                                                        Apt. 393 975 Auer River, North Lashonview, SD 07666
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" class="searchitem">
+                                                <div class="searchitem-slider">
+                                                    <div class="swiper mySwiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/searchresult/slide2.jpg" alt="img">
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/searchresult/slide2.jpg" alt="img">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-pagination"></div>
+                                                        <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="searchitem__descr">
+                                                    <p class="price">$2567.00</p>
+                                                    <p class="address">
+                                                        54168 Jaqueline Road, Rexmouth, CO 63555
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" class="searchitem">
+                                                <div class="searchitem-slider">
+                                                    <div class="swiper mySwiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/searchresult/slide3.jpg" alt="img">
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/searchresult/slide3.jpg" alt="img">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-pagination"></div>
+                                                        <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="searchitem__descr">
+                                                    <p class="price">$1234.00</p>
+                                                    <p class="address">
+                                                        Apt. 393 975 Auer River, North Lashonview, SD 07666
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" class="searchitem">
+                                                <div class="searchitem-slider">
+                                                    <div class="swiper mySwiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/searchresult/slide4.jpg" alt="img">
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/searchresult/slide4.jpg" alt="img">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-pagination"></div>
+                                                        <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="searchitem__descr">
+                                                    <p class="price">$8765.00</p>
+                                                    <p class="address">
+                                                        54168 Jaqueline Road, Rexmouth, CO 63555
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" class="searchitem">
+                                                <div class="searchitem-slider">
+                                                    <div class="swiper mySwiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/searchresult/slide5.jpg" alt="img">
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/searchresult/slide5.jpg" alt="img">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-pagination"></div>
+                                                        <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="searchitem__descr">
+                                                    <p class="price">$8765.00</p>
+                                                    <p class="address">
+                                                        54168 Jaqueline Road, Rexmouth, CO 63555
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" class="searchitem">
+                                                <div class="searchitem-slider">
+                                                    <div class="swiper mySwiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/searchresult/slide6.jpg" alt="img">
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/searchresult/slide6.jpg" alt="img">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-pagination"></div>
+                                                        <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="searchitem__descr">
+                                                    <p class="price">$8765.00</p>
+                                                    <p class="address">
+                                                        54168 Jaqueline Road, Rexmouth, CO 63555
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="searchpagination">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/searchresult/pag-left.svg" alt="prev">
+                                                </a>
+                                            </li>
+                                            <li><a href="#">1</a></li>
+                                            <li class="active"><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li>...</li>
+                                            <li><a href="#">11</a></li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/searchresult/pag-right.svg" alt="prev">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__col">
+                        <div class="footer__logo">
+                            <a href="index.html">
+                                <img src="img/general/logotype.svg" alt="logotype">
+                            </a>
+                        </div>
+                        <div class="footer__desctope">
+                            <div class="footer__copy">
+                                <p>
+                                    Inspaction shering 2024 <br>© All rights reserved
+                                </p>
+                            </div>
+                            <div class="footer__social">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/general/telegram.svg" alt="telegram">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/general/instagram.svg" alt="instagram">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/general/youtube.svg" alt="youtube">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__descr">
+                            <p>
+                                Sociis fringilla pellentesque urna sed. Molestie cras nunc eu ac pellentesque tortor
+                                eget.
+                            </p>
+                        </div>
+                        <div class="footer__menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Name 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Name 1
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__buttons">
+                            <a href="#" class="sectbtn">
+                                Refer
+                            </a>
+                            <a href="#" class="bluebtn">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.75 8.625C13.5842 8.625 13.4253 8.69085 13.3081 8.80806C13.1908 8.92527 13.125 9.08424 13.125 9.25V11.8831C13.1245 12.3449 12.9408 12.7877 12.6143 13.1143C12.2877 13.4408 11.8449 13.6245 11.3831 13.625H3.61688C3.15505 13.6245 2.71229 13.4408 2.38573 13.1143C2.05917 12.7877 1.8755 12.3449 1.875 11.8831V9.25C1.875 9.08424 1.80915 8.92527 1.69194 8.80806C1.57473 8.69085 1.41576 8.625 1.25 8.625C1.08424 8.625 0.925268 8.69085 0.808058 8.80806C0.690848 8.92527 0.625 9.08424 0.625 9.25V11.8831C0.625827 12.6764 0.941307 13.4369 1.50221 13.9978C2.06312 14.5587 2.82363 14.8742 3.61688 14.875H11.3831C12.1764 14.8742 12.9369 14.5587 13.4978 13.9978C14.0587 13.4369 14.3742 12.6764 14.375 11.8831V9.25C14.375 9.08424 14.3092 8.92527 14.1919 8.80806C14.0747 8.69085 13.9158 8.625 13.75 8.625Z"
+                                        fill="white" />
+                                    <path
+                                        d="M4.19176 5.94188L6.87489 3.25875V11.125C6.87489 11.2908 6.94074 11.4497 7.05795 11.5669C7.17516 11.6842 7.33413 11.75 7.49989 11.75C7.66565 11.75 7.82462 11.6842 7.94183 11.5669C8.05904 11.4497 8.12489 11.2908 8.12489 11.125V3.25875L10.808 5.94188C10.9259 6.05573 11.0838 6.11872 11.2476 6.1173C11.4115 6.11588 11.5683 6.05015 11.6841 5.93427C11.8 5.81839 11.8658 5.66163 11.8672 5.49775C11.8686 5.33388 11.8056 5.17601 11.6918 5.05813L7.94176 1.30813C7.82456 1.19096 7.66562 1.12514 7.49989 1.12514C7.33416 1.12514 7.17522 1.19096 7.05801 1.30813L3.30801 5.05813C3.19416 5.17601 3.13117 5.33388 3.13259 5.49775C3.13402 5.66163 3.19975 5.81839 3.31563 5.93427C3.43151 6.05015 3.58826 6.11588 3.75214 6.1173C3.91601 6.11872 4.07389 6.05573 4.19176 5.94188Z"
+                                        fill="white" />
+                                </svg>
+                                Upload
+                            </a>
+                        </div>
+                        <div class="footer__social mobile">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/general/telegram.svg" alt="telegram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/general/instagram.svg" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/general/youtube.svg" alt="youtube">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__copy mobile">
+                            <p>
+                                Inspaction shering 2024 <br>© All rights reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

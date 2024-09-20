@@ -292,7 +292,8 @@ header.header.header__sign {
     display: none;
 }
 
-.searchbtn {
+.searchbtn,
+.closemenu {
     display: none;
 }
 
@@ -403,7 +404,7 @@ header.header.header__sign {
     .header__inf-log .links a {
         font-size: 14px;
     }
-    
+
     .header__inf-log {
         max-width: 100px;
         flex: 0 0 100px;
@@ -416,7 +417,7 @@ header.header.header__sign {
     .header__inf-cart .header__proce p {
         font-size: 14px;
     }
-    
+
     .header__inf-cart {
         max-width: calc(100% - 100px);
         flex: 0 0 calc(100% - 100px);
@@ -438,10 +439,6 @@ header.header.header__sign {
         }
     }
 
-    .mobmenu {
-        display: none;
-    }
-
     .menubtn {
         display: inline-block;
         position: absolute;
@@ -458,6 +455,154 @@ header.header.header__sign {
         flex: 0 0 140px;
     }
 
+
+
+    .menubg {
+        background: rgba(#000, 0.5);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        z-index: -1;
+        visibility: hidden;
+        transition: 0.3s;
+
+        &.show {
+            visibility: visible;
+            opacity: 1;
+            z-index: 1;
+        }
+    }
+
+    .closemenu {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        border: none;
+        padding: 0;
+        background: transparent;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .mobmenu {
+        // display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background: #fff;
+        z-index: 2;
+        height: 100vh;
+        overflow: auto;
+        width: 500px;
+        padding: 70px 30px 40px;
+        transform: translateX(520px);
+        transition: 0.5s;
+
+        &.open {
+            transform: translateX(0);
+        }
+    }
+
+    header.header .header__rightsect {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        align-items: flex-start;
+
+        .header__nav {
+            max-width: 100%;
+            text-align: left;
+
+            ul {
+                margin-bottom: 40px;
+
+                li {
+                    display: block;
+                    margin-bottom: 20px;
+
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .header__btns {
+            max-width: 100%;
+            display: block;
+            flex: initial;
+
+            .blue-btn,
+            .lightblue-btn {
+                height: 46px;
+                max-width: 200px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .header.header__sign {
+        .header__rightsect {
+            .header__btns {
+                order: 2;
+            }
+
+            .header__inf {
+                order: 1;
+                max-width: 100%;
+                flex: 0 0 100%;
+                display: block;
+                text-align: left;
+            }
+
+            .header__inf-log {
+                max-width: 100%;
+            }
+
+            .header__inf-cart {
+                max-width: 100%;
+                flex: initial;
+                padding-left: 0;
+                width: 100%;
+            }
+        }
+
+        .header__inf-log .links {
+
+            a {
+                font-size: 18px;
+                margin-bottom: 10px;
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .header__rightsect .header__inf-log {
+            align-items: center;
+        }
+
+        .header__inf-cart {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header__inf-cart .header__proce p {
+            font-size: 18px;
+        }
+
+
+
+    }
 }
 
 @media(max-width:575.8px) {
@@ -488,5 +633,37 @@ header.header.header__sign {
     header.header .header__leftsect .header__search form button {
         top: 13px;
         right: 13px;
+    }
+
+    .mobmenu {
+        width: 80%;
+        transform: translateX(100%);
+        padding: 50px 20px 20px 20px;
+    }
+
+    .closemenu {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        right: 15px;
+        top: 15px;
+    }
+
+    header.header .header__rightsect .header__nav ul li a {
+        font-size: 18px;
+    }
+
+    header.header .header__rightsect .header__nav ul li {
+        margin-bottom: 15px;
+    }
+
+    header.header .header__rightsect .header__btns .blue-btn,
+    header.header .header__rightsect .header__btns .lightblue-btn {
+        height: 42px;
+        max-width: 100%;
+    }
+
+    header.header .header__rightsect .header__nav ul {
+        margin-bottom: 30px;
     }
 }
