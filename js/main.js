@@ -16,24 +16,43 @@ $(document).ready(function () {
 
 
     // swiper
-    var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            dynamicBullets: true,
-        },
-    });
+    if ($('.swiper').length) {
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    }
 
+    // fancybox
+    if ($('[data-fancybox]').length) {
+        Fancybox.bind("[data-fancybox]", {
 
+        });
+    }
 
-
-
-
-
+    // product slider
+    if ($('.prodslider').length) {
+        var swiper = new Swiper(".prodslider", {
+            slidesPerView: 2,
+            spaceBetween: 24,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    }
 
 
 
@@ -45,4 +64,5 @@ $(document).ready(function () {
 
 
 });
+
 

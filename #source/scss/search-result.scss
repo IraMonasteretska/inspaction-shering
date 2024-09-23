@@ -1,9 +1,9 @@
 .searchressect {
-    padding: 25px 0 120px 0;
+    padding: 0 0 120px 0;
 }
 
 .breadcrumbsbox {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 
     ul {
         list-style-type: none;
@@ -40,6 +40,7 @@
 
             a {
                 color: rgba(154, 160, 164, 1);
+                transition: 0.3s;
 
                 &:hover {
                     color: rgba(8, 80, 172, 1);
@@ -61,6 +62,7 @@
     .imgwrap {
         height: 180px;
         position: relative;
+        overflow: hidden;
 
         img {
             width: 100%;
@@ -68,6 +70,14 @@
             object-fit: cover;
             object-position: 50% 50%;
             border-radius: 20px 20px 0 0;
+            transition: 0.5s;
+            transform: scale(1.01);
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
         }
     }
 
@@ -175,9 +185,9 @@
 
     .gotopage {
         width: 83px;
-        
+
         background: #fff;
-       
+
         position: relative;
 
         input {
@@ -216,44 +226,176 @@
 
 .searchcontent {
     position: relative;
+    padding-top: 80px;
 }
 
-.mapwrapper {
+.searchhero {
+    height: 240px;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: rgba(#000, 0.7);
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .breadcrumbsbox {
+        padding-top: 25px;
+        margin-bottom: 16px;
+
+        ul li a {
+            color: #fff;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .breadcrumbsbox ul li:after {
+        background: url(../img/searchresult/breadarr-white.svg) no-repeat center / 100%;
+    }
+}
+
+.searchhero__bg {
+    width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    background: #E6E8EC;
-    width: calc(50% - 10px);
-    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
+.searchhero__search {
+    max-width: 605px;
+    margin: 0 auto;
 
+    .title {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+        font-family: "Prompt", sans-serif;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 110%;
+    }
 
+    .searchhero__form {
+        position: relative;
+        width: 100%;
 
+        input {
+            width: 100%;
+            background: #fff;
+            border: none;
+            height: 61px;
+            padding-left: 33px;
+            border-radius: 40px;
+            font-size: 16px;
+            font-family: "Montserrat", sans-serif;
 
+            &::placeholder {
+                color: #9AA0A4;
+                transition: 0.5s;
+            }
+            &:focus {
+                &::placeholder {
+                    opacity: 0;
+                }
+            }
+        }
 
+        button {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            width: 57px;
+            height: 57px;
+            border: none;
+            outline: none;
+            background: #0850AC;
+            padding: 0;
+            border-radius: 50%;
+        }
+    }
+}
 
+@media(max-width:1399.8px) {
+    .searchitem {
+        border-radius: 10px;
+    }
 
+    .searchitem-slider .imgwrap img {
+        border-radius: 0;
+    }
 
+    .searchitem-slider .imgwrap {
+        height: 150px;
+    }
+}
 
+@media(max-width:1199.8px) {
+    .searchressect {
+        padding-bottom: 80px;
+    }
+}
 
+@media(max-width:767.8px) {
+    .searchitem-slider .imgwrap {
+        height: 200px;
+    }
+}
 
+@media(max-width:575.8px) {
+    .searchitem-slider .imgwrap {
+        height: 160px;
+    }
 
+    .searchhero__search {
+        margin-top: 30px;
+    }
 
+    .searchhero__search .title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
 
+    .searchhero__search .searchhero__form input {
+        height: 50px;
+        padding-left: 15px;
 
+        &::placeholder {
+            font-size: 15px;
+        }
+    }
 
+    .searchhero__search .searchhero__form button {
+        width: 46px;
+        height: 46px;
+    }
 
+    .searchcontent {
+        padding-top: 50px;
+    }
 
+    .searchpagination {
+        margin-top: 20px;
+    }
 
+    .searchressect {
+        padding-bottom: 50px;
+    }
 
-
-
-
-
-
-
-
-
-
-
+}

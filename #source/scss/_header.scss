@@ -199,10 +199,10 @@ header.header.header__sign {
 .header__inf-log {
     display: inline-flex;
     align-items: flex-start;
-    max-width: 110px;
+    max-width: 160px;
     width: 100%;
-    flex: 0 0 110px;
-    margin-right: 50px;
+    flex: 0 0 160px;
+    margin-right: 20px;
 
     .imgwrap {
         width: 100%;
@@ -229,6 +229,14 @@ header.header.header__sign {
             font-size: 16px;
             color: #9AA0A4;
             transition: 0.3s;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+            &:nth-child(1) {
+                font-size: 10px;
+            }
 
             &:hover {
                 color: #0850AC;
@@ -240,7 +248,7 @@ header.header.header__sign {
 .header__inf-cart {
     display: inline-flex;
     align-items: center;
-    max-width: calc(100% - 160px);
+    max-width: calc(100% - 180px);
 
     .label {
         display: inline-flex;
@@ -324,12 +332,14 @@ header.header.header__sign {
 
     .header__inf-log {
         margin-right: 0;
+        max-width: 140px;
+        flex: 0 0 140px;
     }
 
     .header__inf-cart {
-        max-width: calc(100% - 110px);
-        flex: 0 0 calc(100% - 110px);
-        padding-left: 20px;
+        max-width: calc(100% - 140px);
+        flex: 0 0 calc(100% - 140px);
+        padding-left: 10px;
     }
 
     .header__inf {
@@ -341,6 +351,22 @@ header.header.header__sign {
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
+    }
+
+    header.header .header__rightsect .header__btns {
+        max-width: 260px;
+        flex: 0 0 260px;
+    }
+
+    header.header .header__rightsect .header__inf, header.header .header__rightsect .header__nav {
+        max-width: calc(100% - 260px);
+        flex: 0 0 calc(100% - 260px);
+    }
+
+    header.header .header__rightsect .header__btns .blue-btn,
+    header.header .header__rightsect .header__btns .lightblue-btn {
+        max-width: 125px;
+        flex: 0 0 125px;
     }
 
 }
@@ -565,6 +591,7 @@ header.header.header__sign {
 
             .header__inf-log {
                 max-width: 100%;
+                margin-bottom: 10px;
             }
 
             .header__inf-cart {
@@ -578,22 +605,27 @@ header.header.header__sign {
         .header__inf-log .links {
 
             a {
-                font-size: 18px;
+                font-size: 20px;
                 margin-bottom: 10px;
-    
+
+                &:nth-child(1) {
+                    font-size: 14px;
+                }
+
                 &:last-child {
                     margin-bottom: 0;
                 }
             }
         }
 
+        
         .header__rightsect .header__inf-log {
             align-items: center;
         }
 
         .header__inf-cart {
             margin-top: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .header__inf-cart .header__proce p {
