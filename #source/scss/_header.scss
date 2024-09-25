@@ -58,9 +58,14 @@ header.header {
                     font-size: 14px;
                     font-family: "Montserrat", sans-serif;
                     padding-right: 50px;
+                    transition: 0.3s;
 
                     &::placeholder {
                         color: #9AA0A4;
+                    }
+
+                    &:focus {
+                        border-color: #0850AC;
                     }
                 }
 

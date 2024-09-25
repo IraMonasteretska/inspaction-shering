@@ -32,6 +32,10 @@
     position: relative;
     z-index: 1;
 
+    animation-name: move;
+    animation-duration: 2s;
+
+
     .title {
         font-size: 57px;
         line-height: 110%;
@@ -39,6 +43,18 @@
         font-family: "Prompt", sans-serif;
         color: #fff;
         margin-bottom: 50px;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 

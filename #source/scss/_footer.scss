@@ -45,10 +45,19 @@
     }
 
     img {
-
         width: 30px;
         height: 30px;
         background-size: cover;
+        transition: 0.3s;
+    }
+
+    a {
+
+        &:hover {
+            img {
+                filter: drop-shadow(0 0 6px #0850AC);
+            }
+        }
     }
 }
 
@@ -99,6 +108,22 @@
     }
 }
 
+.footer__sign {
+    padding-left: 24px;
+    position: relative;
+    color: #8C9296;
+
+    &::after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -1px;
+        background: url('../img/general/header-ic1.svg') no-repeat center / 100%;
+    }
+}
 
 //  --- === ADAPTIVE === --- //
 
