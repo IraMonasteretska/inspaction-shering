@@ -209,6 +209,69 @@ header.header.header__sign {
     flex: 0 0 160px;
     margin-right: 20px;
 
+    &.dd {
+        align-items: center;
+        position: relative;
+        
+        span {
+            cursor: pointer;
+        }
+
+        .header__inf-ddmenu {
+            position: absolute;
+            left: -30px;
+            top: 70px;
+            width: 202px;
+            background: #fff;
+            border: 1px solid #D9DBDF;
+            padding: 25px;
+            border-radius: 0 0 5px 5px;
+            display: none;
+
+            ul {
+                li {
+                    margin: 0 0 25px 0 !important;
+                    text-align: left !important;
+                    display: block !important;
+
+                    &:last-child {
+                        margin-bottom: 0 !important;
+                    }
+                    
+                    a {
+                        display: flex !important;
+                        align-items: center;
+
+                        &:hover {
+                            span {
+                                color: #0850AC;
+                            }
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                        max-width: 25px;
+                        flex: 0 0 25px;
+                    }
+
+                    span {
+                        display: block;
+                        width: 100%;
+                        max-width: calc(100% - 25px);
+                        flex: 0 0 calc(100% - 25px);
+                        padding-left: 15px;
+                        color: #383C43;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 120%;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+
     .imgwrap {
         width: 100%;
         max-width: 30px;
@@ -246,6 +309,20 @@ header.header.header__sign {
             &:hover {
                 color: #0850AC;
             }
+        }
+
+        span {
+            font-size: 16px;
+            display: block;
+            line-height: 120%;
+            font-weight: 500;
+            color: #0850AC;
+
+            &:nth-child(1) {
+                
+            }
+
+            &:nth-child(2) {}
         }
     }
 }
@@ -459,6 +536,9 @@ header.header.header__sign {
         padding-left: 10px;
     }
 
+    .header__inf-log .links span {
+        font-size: 14px;
+    }
 
 
 }
@@ -640,6 +720,24 @@ header.header.header__sign {
 
 
     }
+
+
+
+
+
+    .header__inf-log.dd .header__inf-ddmenu {
+        position: relative;
+        left: initial;
+        top: 0;
+        width: auto;
+        border: none;
+    }
+
+    .header.header__sign .header__rightsect .header__inf-log.dd {
+        flex-wrap: wrap;
+    }
+
+
 }
 
 @media(max-width:575.8px) {

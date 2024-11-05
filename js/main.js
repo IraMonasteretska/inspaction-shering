@@ -73,6 +73,10 @@ $(document).ready(function () {
         $(this).find('span').toggle();
         $(this).prev('.row').toggleClass('show');
     });
+
+    $('.header__inf-log .links span').click(function(){
+        $('.header__inf-ddmenu').toggle();
+    });
 });
 
 
