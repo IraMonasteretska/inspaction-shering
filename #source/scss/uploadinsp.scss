@@ -1,0 +1,243 @@
+.uploadinsp {
+    padding: 56px 0 80px;
+
+    h1 {
+        color: #383C43;
+        font-weight: 500;
+        font-size: 35px;
+        text-align: center;
+        line-height: 110%;
+        font-family: "Prompt", sans-serif;
+        margin-bottom: 40px;
+    }
+}
+
+.secttitle {
+    padding-left: 40px;
+    color: #0850AC;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Prompt", sans-serif;
+    margin-bottom: 8px;
+    line-height: 140%;
+}
+
+.uploadinsp__repbox {
+    border: 1px solid #0850AC;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+
+    .leftsect {
+        width: 100%;
+        max-width: 100px;
+        flex: 0 0 100px;
+
+        p {
+            margin: 0;
+            font-size: 20px;
+            color: #383C43;
+            font-family: "Prompt", sans-serif;
+        }
+    }
+
+    .rightsect {
+        width: 100%;
+        max-width: calc(100% - 100px);
+        flex: 0 0 calc(100% - 100px);
+        padding-top: 25px;
+    }
+}
+
+.uploadinsp-formrow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+
+    p {
+        margin: 0;
+        width: 100%;
+        max-width: 33%;
+        flex: 0 0 33%;
+        text-align: right;
+        padding-right: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 9px;
+        color: #959BA7;
+
+        i {
+            vertical-align: middle;
+            display: inline-block;
+            margin-top: -2px;
+            position: relative;
+        }
+
+        img {
+            vertical-align: top;
+        }
+    }
+
+    .uploadinpwrap {
+        width: 100%;
+        max-width: 67%;
+        flex: 0 0 67%;
+    }
+
+}
+
+.uploadinpwrap {
+    position: relative;
+
+    input {
+        height: 36px;
+        border-radius: 10px;
+        border: 1px solid #D9DBDF;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 10px;
+        font-size: 16px;
+        color: #4F545F;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+
+        &.date {
+            max-width: 162px;
+        }
+
+       
+    }
+
+    select {
+        height: 36px;
+        border-radius: 10px;
+        border: 1px solid #D9DBDF;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 10px;
+        font-size: 16px;
+        color: #4F545F;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+        outline: none;
+    }
+
+    .select2 {
+        width: 100% !important;
+
+        .select2-selection--single {
+            height: 36px;
+            border-radius: 10px;
+            border: 1px solid #D9DBDF;
+        }
+
+        .select2-selection--single .select2-selection__rendered {
+            line-height: 36px;
+            padding-left: 16px;
+        }
+
+        .select2-selection__arrow b {
+            border-width: 5px 5px 0 5px;
+            margin-left: -10px;
+        }
+
+        .select2-selection__arrow {
+            height: 36px;
+        }
+    }
+
+    select {
+        -webkit-appearance: none; 
+        -moz-appearance: none;    
+        appearance: none;         
+        background-image: url('../img/search-address/selectarr.svg'); 
+        background-repeat: no-repeat;
+        background-position: right 10px center; 
+        padding-right: 30px; 
+    }
+    
+    select::-ms-expand {
+        display: none; 
+    }
+
+}
+
+.uploadfile {
+    height: 74px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    position: relative;
+    border: 1px dashed #0850AC;
+
+    .sectbtn {
+        position: absolute;
+        right: 16px;
+        padding: 0;
+        width: 130px;
+        height: 42px;
+
+        svg {
+            margin-right: 6px;
+            margin-top: -3px;
+
+            path {
+                transition: 0.3s;
+            }
+        }
+
+        &:hover {
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+
+    p {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0;
+        text-align: left;
+        padding-right: 140px;
+        color: #000;
+        font-weight: 500;
+        line-height: 110%;
+    }
+}
+
+.uploadinput {
+    display: none;
+}
+
+label.sectbtn {
+    cursor: pointer;
+}
+
+.filename {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.uploadinsp__repboxes-btns {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    button {
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 12px;
+
+        svg {
+            vertical-align: middle;
+            margin-top: -3px;
+        }
+    }
+}
