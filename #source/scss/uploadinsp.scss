@@ -91,7 +91,8 @@
 .uploadinpwrap {
     position: relative;
 
-    input {
+    input,
+    textarea {
         height: 36px;
         border-radius: 10px;
         border: 1px solid #D9DBDF;
@@ -107,7 +108,29 @@
             max-width: 162px;
         }
 
-       
+
+    }
+
+    textarea {
+        height: 98px;
+        padding-top: 8px;
+        resize: none;
+        outline: none;
+        vertical-align: top;
+
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+            // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background: #f0f0f0;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #0850AC;
+            border-radius: 10px;
+        }
     }
 
     select {
@@ -149,17 +172,17 @@
     }
 
     select {
-        -webkit-appearance: none; 
-        -moz-appearance: none;    
-        appearance: none;         
-        background-image: url('../img/search-address/selectarr.svg'); 
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url('../img/search-address/selectarr.svg');
         background-repeat: no-repeat;
-        background-position: right 10px center; 
-        padding-right: 30px; 
+        background-position: right 10px center;
+        padding-right: 30px;
     }
-    
+
     select::-ms-expand {
-        display: none; 
+        display: none;
     }
 
 }
@@ -224,6 +247,65 @@ label.sectbtn {
     white-space: nowrap;
 }
 
+// -----------------------------
+.uploadinsp__repbox.refupl {
+    display: block;
+
+    .rightsect {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0;
+    }
+
+    .uploadinsp-formrow {
+        p {
+            max-width: 40%;
+            flex: 0 0 40%;
+            position: relative;
+            padding-right: 46px;
+
+            i {
+                position: absolute;
+                right: 20px;
+                top: 10px;
+            }
+        }
+
+        .uploadinpwrap {
+            max-width: 60%;
+            flex: 0 0 60%;
+        }
+    }
+
+    .bluebtn {
+        width: 200px;
+    }
+}
+
+.bluebtn.send {
+    width: 200px;
+}
+
+.checkwrapper {
+    .checklab {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border-radius: 5px;
+        border: 1px solid #D9DBDF;
+        cursor: pointer;
+        margin-top: 6px;
+    }
+
+    input {
+        display: none;
+    }
+
+    input:checked+label {
+        background: url('../img/search-address/check.png') no-repeat center / 18px;
+    }
+}
+
 .uploadinsp__repboxes-btns {
     margin-top: 24px;
     display: flex;
@@ -239,5 +321,253 @@ label.sectbtn {
             vertical-align: middle;
             margin-top: -3px;
         }
+    }
+}
+
+// email example
+.emailexemple {
+    background: linear-gradient(to top, #0850AC, #305DFE);
+    border-radius: 6px;
+    padding: 35px 0 0 0;
+    margin-top: -55px;
+
+    .ddicon {
+        width: 50px;
+        display: block;
+        margin: 0 auto 25px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 150%;
+        color: #fff;
+        margin-bottom: 5px;
+        word-wrap: break-word;
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 120%;
+
+    }
+
+    .ddlnk {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px auto;
+        width: 100%;
+        max-width: 235px;
+        height: 37px;
+        background: #fff;
+        border-radius: 19px;
+        color: #0850AC;
+        font-size: 11px;
+        line-height: 110%;
+        font-weight: 600;
+
+        img {
+            width: 13px;
+            margin-right: 10px;
+        }
+    }
+
+    .emailcontent {
+        padding: 0 24px;
+    }
+}
+
+// congrats
+.congratssection {
+    padding: 80px 0 13px;
+
+    p {
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #383C43;
+    }
+
+    .title {
+        margin-bottom: 30px;
+        font-size: 35px;
+        font-weight: 500;
+        color: #0850AC;
+        font-family: "Prompt", sans-serif;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        padding: 0;
+        font-size: 18px;
+        margin: 0 auto 13px;
+        min-height: 58px;
+        text-transform: capitalize;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+@media(max-width:1440.8px) {
+    .emailexemple .title {
+        margin-bottom: 20px;
+    }
+
+    .emailexemple .ddlnk {
+        margin: 20px auto;
+    }
+
+    .emailexemple {
+        margin-top: -30px;
+    }
+
+    .emailexemple .ddicon {
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .uploadinsp__repbox {
+        padding: 30px 20px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .emailexemple {
+        max-width: 400px;
+        margin: 30px auto 0;
+    }
+
+}
+
+@media(max-width:767.8px) {
+
+    .uploadinsp__repbox .leftsect,
+    .uploadinsp__repbox .rightsect {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .uploadinsp__repbox {
+        padding: 30px 20px;
+    }
+
+    .uploadinsp {
+        padding: 40px 0 50px;
+    }
+
+    .uploadinsp h1 {
+        margin-bottom: 30px;
+    }
+
+    .congratssection .title {
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+
+    .congratssection {
+        padding-top: 40px;
+    }
+
+    .congratssection p {
+        font-size: 18px;
+    }
+
+
+
+}
+
+@media(max-width:575.8px) {
+    .uploadinsp__repbox .leftsect p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .uploadinsp__repbox .rightsect {
+        padding-top: 10px;
+    }
+
+    .uploadinsp-formrow p {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    .uploadinsp-formrow .uploadinpwrap {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .uploadinsp-formrow {
+        margin-bottom: 15px;
+    }
+
+    .uploadfile .sectbtn {
+        width: 130px !important;
+    }
+
+    .uploadinsp-formrow p {
+        padding-right: 140px;
+    }
+
+    .uploadinsp__repboxes-btns button {
+        padding: 0;
+        font-size: 13px;
+        font-weight: 500;
+        height: 44px;
+    }
+
+    .secttitle {
+        padding-left: 0;
+        font-size: 21px;
+    }
+
+    .uploadinsp h1 {
+        font-size: 28px;
+    }
+
+    .uploadinsp__repbox.refupl .uploadinsp-formrow p,
+    .uploadinsp__repbox.refupl .uploadinsp-formrow .uploadinpwrap {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .uploadinsp__repbox.refupl .uploadinsp-formrow p i {
+        top: 0;
+        position: relative;
+        right: 0;
+    }
+
+    .emailexemple p {
+        font-size: 12px;
+    }
+
+    .congratssection .title {
+        font-size: 28px;
+    }
+
+    .congratssection p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .congratssection a {
+        font-size: 16px;
+        min-height: 52px;
     }
 }

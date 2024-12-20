@@ -85,78 +85,20 @@ $(document).ready(function () {
     // new  
     // tooltip
 
-    // let $tooltip = null;
-    // const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
-    // const removeAllTooltips = function () {
-    //     $('.tooltip').remove();
-    //     $tooltip = null;
-    // };
-
-    // const showTooltip = function ($el) {
-    //     const tooltipText = $el.data('tooltip');
-    //     if (!tooltipText) return;
-
-    //     removeAllTooltips();
-
-    //     $tooltip = $('<div class="tooltip"></div>').text(tooltipText).appendTo('body');
-
-    //     const offset = $el.offset();
-    //     $tooltip.css({
-    //         left: offset.left + $el.outerWidth() / 2 - $tooltip.outerWidth() / 2,
-    //         top: offset.top - $tooltip.outerHeight() - 12,
-    //     });
-
-    //     setTimeout(() => {
-    //         if ($tooltip) $tooltip.addClass('show');
-    //     }, 10);
-    // };
-
-    // const hideTooltip = function () {
-    //     if ($tooltip) {
-    //         $tooltip.removeClass('show').on('transitionend', function () {
-    //             $(this).remove();
-    //         });
-    //         $tooltip = null;
-    //     }
-    // };
-
-    // if (!isTouchDevice) {
-    //     $(document).on('mouseenter', '[data-tooltip]', function () {
-    //         showTooltip($(this));
-    //     });
-
-    //     $(document).on('mouseleave', '[data-tooltip]', function () {
-    //         hideTooltip();
-    //     });
-    // }
-
-    // else {
-    //     $(document).on('click', '[data-tooltip]', function (e) {
-    //         e.stopPropagation();
-    //         if ($tooltip) {
-    //             hideTooltip();
-    //         } else {
-    //             showTooltip($(this));
-    //         }
-    //     });
-
-    //     $(document).on('click', function () {
-    //         removeAllTooltips();
-    //     });
-    // }
-
-
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 
-    // if ($('select').length) {
-    //     $('.styledselect').select2({
-    //         // placeholder: "Project Type*",
-    //         minimumResultsForSearch: Infinity,
-    //     });
-    // }
+
+
+
+
+
+
+
+
+
+
 
 });
 
@@ -176,3 +118,79 @@ document.querySelectorAll('.uploadfile').forEach(function (uploadFileBlock) {
 });
 
 // add more reps
+if ($('#addReportBtn').length) {
+    document.getElementById('addReportBtn').addEventListener('click', function () {
+        const reportCount = document.querySelectorAll('.uploadinsp__repbox').length + 1;
+        const newReport = document.querySelector('.uploadinsp__repbox').cloneNode(true);
+
+        const reportTitle = newReport.querySelector('.report-title');
+        reportTitle.textContent = `Report ${reportCount}`;
+
+        const inputs = newReport.querySelectorAll('input, select');
+        inputs.forEach((input) => {
+            if (input.type === 'file') {
+                input.value = '';
+                newReport.querySelector('.filename').textContent = 'Upload file';
+            } else if (input.type === 'date') {
+                input.value = '';
+            } else if (input.type === 'text') {
+                input.value = '';
+            } else if (input.tagName === 'SELECT') {
+                input.selectedIndex = 0;
+            }
+        });
+
+        inputs.forEach((input) => {
+            if (input.type === 'file') {
+                const newFileInputId = `repfile-${reportCount}`;
+                input.id = newFileInputId;
+
+                const fileLabel = newReport.querySelector('label[for="repfile"]');
+                if (fileLabel) {
+                    fileLabel.setAttribute('for', newFileInputId);
+                }
+
+                input.addEventListener('change', function () {
+                    const fileName = input.files[0] ? input.files[0].name : "Upload file";
+                    newReport.querySelector('.filename').textContent = fileName;
+                });
+            } else if (input.type === 'date') {
+                input.id = `date-${reportCount}`;
+            } else if (input.type === 'text' && input.placeholder === '0.00') {
+                input.id = `price-${reportCount}`;
+            } else if (input.type === 'text' && input.placeholder === '') {
+                input.id = `companyName-${reportCount}`;
+            } else if (input.tagName === 'SELECT') {
+                input.id = `reportType-${reportCount}`;
+            }
+        });
+
+        document.querySelector('.uploadinsp__repboxes').appendChild(newReport);
+
+        const selects = newReport.querySelectorAll('select');
+        selects.forEach((select) => {
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const reportOwnerInput = document.getElementById('subjinp'); // Поле для заголовку
+    const messCont = document.getElementById('messcont'); // Поле для контексту
+    const titleElement = document.querySelector('.emailcontent .title');
+    const emailContextElement = document.querySelector('.emailcontent .emailcontex');
+
+    // Оновлення заголовку
+    if (reportOwnerInput && titleElement) {
+        reportOwnerInput.addEventListener('input', function () {
+            titleElement.textContent = reportOwnerInput.value || "Report owner - upload your report";
+        });
+    }
+
+    // Оновлення контексту, з заміною нових рядків на <br>
+    if (messCont && emailContextElement) {
+        messCont.addEventListener('input', function () {
+            const formattedText = messCont.value.replace(/\n/g, '<br>'); // Замінюємо '\n' на '<br>'
+            emailContextElement.innerHTML = formattedText || "This is a template! Publish your report and earn money!";
+        });
+    }
+});
