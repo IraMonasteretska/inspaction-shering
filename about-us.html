@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inspaction Sharing</title>
+    <title>About Us</title>
     <link rel="icon" type="image/x-icon" href="img/general/favicon.png">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="pagewrapper">
-        <header class="header">
+        <header class="header header__sign">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -22,9 +23,6 @@
                                 <img src="img/general/logo.svg" alt="logo">
                             </a>
                             <div class="header__search">
-                                <span class="searchbtn">
-                                    <img src="img/general/search.svg" alt="search">
-                                </span>
                                 <form action="">
                                     <input type="text" placeholder="City, neighborhood or ZIP code">
                                     <button>
@@ -39,12 +37,6 @@
                             <img src="img/general/close.png" alt="close">
                         </button>
                         <div class="header__rightsect">
-                            <div class="header__nav">
-                                <ul>
-                                    <li><a href="#">Name 1</a></li>
-                                    <li><a href="#">Name 2</a></li>
-                                </ul>
-                            </div>
                             <div class="header__btns">
                                 <a href="#" class="lightblue-btn">
                                     Refer
@@ -62,6 +54,27 @@
                                     Upload
                                 </a>
                             </div>
+                            <div class="header__inf">
+                                <div class="header__inf-log">
+                                    <div class="imgwrap">
+                                        <img src="img/general/header-ic1.svg" alt="img">
+                                    </div>
+                                    <div class="links">
+                                        <a href="#">my account</a>
+                                        <a href="#"> User Neme</a>
+                                    </div>
+
+                                </div>
+                                <div class="header__inf-cart">
+                                    <div class="imgwrap">
+                                        <img src="img/general/header-ic2.svg" alt="img">
+                                        <span class="label">1</span>
+                                    </div>
+                                    <div class="header__proce">
+                                        <p>00.00$</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -73,47 +86,37 @@
         </header>
 
         <main class="main">
-            <section class="heroscreen">
+            <section class="about-titlesection">
                 <div class="container">
-                    <div class="heroscreen__inner">
-                        <img src="img/home/heroimage.jpg" alt="Top Image" class="heroscreen__bg">
-                        <div class="heroscreen__content">
-                            <h1 class="title">
-                                Find Property Reports Instantly
-                            </h1>
-                            <p>
-                                Access professional property inspection reports from previous buyers. Save thousands on
-                                due diligence costs with verified reports.
-                            </p>
-                            <div class="heroscreen__search">
-                                <form action="#">
-                                    <div class="inputwrapper">
-                                        <input type="text"
-                                            placeholder="Enter property address (e.g, 1 Oak Street, New York, USA)">
-                                        <img src="img/new/search-icon.svg" alt="">
-                                    </div>
-                                    <button>
-                                        Search Reports
-                                    </button>
-                                </form>
-                            </div>
-                            <p class="infotext">
-                                Search property reports from verified inspections across the Bay Area
-                            </p>
-                        </div>
-                    </div>
+                    <h1>About Inspection Sharing</h1>
+                    <p>
+                        Empowering buyers with verified inspection reports, while turning past reports into new
+                        opportunities for sellers.
+                    </p>
+                    <ul>
+                        <li>
+                            <img src="img/new/about-icon.svg" alt="icon">
+                            Trusted & Confidential
+                        </li>
+                        <li>
+                            <img src="img/new/about-icon.svg" alt="icon">
+                            Expert-Verified
+                        </li>
+                        <li>
+                            <img src="img/new/about-icon.svg" alt="icon">
+                            Transparent Pricing
+                        </li>
+                    </ul>
                 </div>
             </section>
 
-            <section class="info">
+            <section class="info ourstory">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <div class="info__content">
                                 <h2>
-                                    Commodo<br>
-                                    leo id duis arcu<br>
-                                    augue ultrices.
+                                    Our Story
                                 </h2>
                                 <p>
                                     Tempus vel sem diam in cum. Porttitor sed quam ut sed posuere vivamus vel. Dictum
@@ -124,99 +127,178 @@
                                     Egestas lorem quam arcu feugiat a amet ac enim volutpat. Sociis fringilla
                                     pellentesque urna sed. Molestie cras nunc eu ac pellentesque tortor eget.
                                 </p>
+                                <p>
+                                    Fringilla convallis nunc et aliquam lacus lacus risus. Libero pretium eros
+                                    pellentesque vitae donec viverra mauris. Amet tempus ut ut velit. Et viverra eu
+                                    adipiscing fermentum tempor lectus pellentesque egestas massa.
+                                </p>
                             </div>
-                            <a href="#" class="info__button bluebtn">
-                                Refer
-                            </a>
+                            <div class="authorinfo">
+                                <p class="author">
+                                    John Smith, Founder
+                                </p>
+                                <p class="author-loc">
+                                    <img src="img/new/loc.svg" alt="icon">
+                                    Chicago
+                                </p>
+                            </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="info__image">
-                                <img src="img/home/img3.png" alt="image">
+                                <img src="img/new/img2.png" alt="image">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="bluesect">
+            <section class="whobenefits">
                 <div class="container">
-                    <div class="bluesect__inner">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div class="bluesect__img">
-                                    <img src="img/home/image_2.png" alt="image">
+                    <div class="whobenefits__header">
+                        <h2>Who Benefits from Inspection Shering?</h2>
+                        <p>
+                            Our platform creates value across the real estate ecosystem:
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="whobenefit__box">
+                                <div class="whobenefit__header">
+                                    <img src="img/new/benefit1.svg" alt="icon">
+                                    <div class="descr">
+                                        <h6>Previous Buyers</h6>
+                                        <p>Turn Reports into Revenue</p>
+                                    </div>
+                                </div>
+                                <div class="whobenefit__body">
+                                    <p>
+                                        Sitting on old inspection reports? Share them with new buyers and turn your
+                                        unused reports into extra income.
+                                    </p>
+                                    <p><b>Key Benefits:</b></p>
+                                    <ul>
+                                        <li>
+                                            <img src="img/new/check-mark.svg" alt="check">
+                                            Earn money back
+                                        </li>
+                                        <li>
+                                            <img src="img/new/check-mark.svg" alt="check">
+                                            Help others save
+                                        </li>
+                                        <li>
+                                            <img src="img/new/check-mark.svg" alt="check">
+                                            Effortless process
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="bluesect__content">
-                                    <h2>
-                                        Interdum sed <br>
-                                        malesuada neque
-                                    </h2>
-                                    <p>
-                                        Fringilla convallis nunc et aliquam lacus lacus risus. Libero pretium eros
-                                        pellentesque vitae donec viverra mauris. Amet tempus ut ut velit. Et viverra eu
-                                        adipiscing fermentum tempor lectus pellentesque egestas massa.
-                                    </p>
-                                    <p>
-                                        Massa et sem ut lacus massa libero nunc turpis faucibus. In volutpat pharetra
-                                        faucibus consequat vulputate ut. Pretium purus nibh tellus pretium. At mattis
-                                        sit ornare congue vel morbi. Gravida tristique ultrices adipiscing massa blandit
-                                        aliquam duis a. Enim ut et vitae viverra orci fames massa.
-                                    </p>
-
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="whobenefit__box">
+                                <div class="whobenefit__header">
+                                    <img src="img/new/benefit2.svg" alt="icon">
+                                    <div class="descr">
+                                        <h6>Real Estate Professionals</h6>
+                                        <p>Speed Up Sales & Earn Referrals</p>
+                                    </div>
                                 </div>
-                                <a href="#" class="bluesect__button bluebtn">Upload</a>
+                                <div class="whobenefit__body">
+                                    <p>
+                                        Agents, brokers, and sellers can encourage past buyers to share reports—speeding
+                                        up transactions while earning referral rewards.
+                                    </p>
+                                    <p><b>Key Benefits:</b></p>
+                                    <ul>
+                                        <li>
+                                            <img src="img/new/check-mark.svg" alt="check">
+                                            Speedier transactions
+                                        </li>
+                                        <li>
+                                            <img src="img/new/check-mark.svg" alt="check">
+                                            Extra referral income
+                                        </li>
+                                        <li>
+                                            <img src="img/new/check-mark.svg" alt="check">
+                                            Improved client experience
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="whobenefit__box">
+                                <div class="whobenefit__header">
+                                    <img src="img/new/benefit3.svg" alt="icon">
+                                    <div class="descr">
+                                        <h6>Real Estate Searchers</h6>
+                                        <p>Turn Reports into Revenue</p>
+                                    </div>
+                                </div>
+                                <div class="whobenefit__body">
+                                    <p>
+                                        Sitting on old inspection reports? Share them with new buyers and turn your
+                                        unused reports into extra income.
+                                    </p>
+                                    <p><b>Key Benefits:</b></p>
+                                    <ul>
+                                        <li>
+                                            <img src="img/new/check-mark.svg" alt="check">
+                                            Instant Report Access
+                                        </li>
+                                        <li>
+                                            <img src="img/new/check-mark.svg" alt="check">
+                                            Help others save
+                                        </li>
+                                        <li>
+                                            <img src="img/new/check-mark.svg" alt="check">
+                                            Find Reports Fast
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="whobenefit__box">
+                                <div class="whobenefit__header">
+                                    <img src="img/new/benefit4.svg" alt="icon">
+                                    <div class="descr">
+                                        <h6>New Buyers</h6>
+                                        <p>Access Quality Reports</p>
+                                    </div>
+                                </div>
+                                <div class="whobenefit__body">
+                                    <p>
+                                        Access expert property inspection reports at a fraction of the price, empowering
+                                        you to make confident, informed decisions.
+                                    </p>
+                                    <p><b>Key Benefits:</b></p>
+                                    <ul>
+                                        <li>
+                                            <img src="img/new/check-mark.svg" alt="check">
+                                            Lower Costs
+                                        </li>
+                                        <li>
+                                            <img src="img/new/check-mark.svg" alt="check">
+                                            Trusted Expertise
+                                        </li>
+                                        <li>
+                                            <img src="img/new/check-mark.svg" alt="check">
+                                            Faster Decisions
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="propreport">
+            <div class="faqsection">
                 <div class="container">
-                    <h2>How the property report works</h2>
-                    <div class="propreportwrapper">
-                        <div class="d-flex">
-                            <div class="propreport__box">
-                                <img src="img/new/propreport1.svg" alt="icon">
-                                <h5>Secure & Verified</h5>
-                                <p>
-                                    Verified reports, securely stored. Access detailed inspections from qualified
-                                    contractors and engineers.
-                                </p>
-                            </div>
-                            <div class="propreport__box">
-                                <img src="img/new/propreport2.svg" alt="icon">
-                                <h5>Instant Access</h5>
-                                <p>
-                                    Immediate access to verified reports means no long delays. Empower your decisions
-                                    with
-                                    speed and confidence.
-                                </p>
-                            </div>
-                            <div class="propreport__box">
-                                <img src="img/new/propreport3.svg" alt="icon">
-                                <h5>Cost Effective</h5>
-                                <p>
-                                    Spend less, learn more. Save thousands on inspections while getting the insights you
-                                    need.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="propreport-line line1">
-                            <i class="green"></i>
-                            <span></span>
-                            <i class="blue"></i>
-                        </div>
-                        <div class="propreport-line line2">
-                            <i class="blue"></i>
-                            <span></span>
-                            <i class="pink"></i>
-                        </div>
-                    </div>
+                    <h2>Frequently Ask Questions</h2>
                 </div>
-            </section>
+            </div>
         </main>
 
         <footer class="footer">
@@ -328,6 +410,7 @@
     </div>
 
     <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
