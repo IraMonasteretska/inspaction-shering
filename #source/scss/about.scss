@@ -135,7 +135,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 15px;
-    
+
     h6 {
         width: 100%;
         font-size: 18px;
@@ -207,5 +207,260 @@
 }
 
 .faqsection {
-    padding: 100px 0 110px;
+    padding: 100px 0 90px;
+
+    h2 {
+        text-align: center;
+        color: #383C43;
+        margin-bottom: 74px;
+        font-size: 45px;
+    }
+}
+
+.faqbox {
+    box-shadow: 0px 0px 17px 0px #00000017;
+    border-radius: 20px;
+    position: relative;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.faqbox__header {
+    height: 100px;
+    padding: 15px 28px 15px 92px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+        color: #383C43;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        left: 38px;
+
+        &::after,
+        &::before {
+            content: '';
+            width: 100%;
+            height: 3px;
+            background: #383C43;
+            border-radius: 5px;
+            position: absolute;
+            transition: 0.3s;
+        }
+
+        &::before {
+            transform: rotate(90deg);
+        }
+    }
+
+    &.open {
+        span:before {
+            transform: rotate(0);
+        }
+
+        span {
+
+            &::after,
+            &::before {
+                background: #0850AC;
+            }
+        }
+    }
+}
+
+.faqbox__body {
+    padding: 0 80px 20px 92px;
+    display: none;
+
+    .descr {
+        min-height: 110px;
+    }
+
+    p {
+        color: #4F545F;
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
+
+.info__content h2 {
+    font-size: 45px;
+}
+
+@media(max-width:1599.8px) {
+    .info__content h2 {
+        margin-bottom: 20px;
+    }
+
+    .faqsection h2 {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .about-titlesection {
+        padding-top: 80px;
+    }
+
+    .about-titlesection h1 {
+        margin-bottom: 20px;
+    }
+
+    .about-titlesection p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .info.ourstory {
+        padding-top: 80px;
+    }
+
+    .whobenefits__header h2 {
+        margin-bottom: 20px;
+    }
+
+    .whobenefits__header p {
+        font-size: 18px;
+    }
+
+
+
+
+
+
+}
+
+@media(max-width:1199.8px) {
+    .whobenefits .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    .faqbox__header {
+        height: 80px;
+        padding: 10px 10px 10px 55px;
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .faqbox__header span {
+        left: 25px;
+    }
+
+    .faqbox {
+        margin-bottom: 20px;
+    }
+
+    .faqbox__body {
+        padding-left: 55px;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .faqbox__body .descr {
+        min-height: initial;
+    }
+
+.whobenefits__header h2,
+    .faqsection h2,
+    .info__content h2 {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+
+    .about-titlesection h1,
+    .info__content h2,
+    .whobenefits__header h2,
+    .faqsection h2 {
+        font-size: 36px;
+    }
+
+    .about-titlesection p,
+    .whobenefits__header p {
+        font-size: 16px;
+    }
+
+    .about-titlesection ul li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about-titlesection,
+    .info.ourstory,
+    .faqsection {
+        padding-top: 50px;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .about-titlesection {
+        padding-bottom: 10px;
+    }
+
+    .faqsection,
+    .info.ourstory,
+    .whobenefits {
+        padding-top: 50px;
+    }
+
+    .info__content h2 {
+        margin-bottom: 10px;
+    }
+
+    .whobenefits__header,
+    .faqsection h2 {
+        margin-bottom: 25px;
+    }
+
+    .faqbox {
+        margin-bottom: 10px;
+        border-radius: 12px;
+    }
+
+    .faqbox__header {
+        height: auto;
+        min-height: 60px;
+        padding: 10px 10px 10px 55px;
+
+        p {
+            font-weight: 500;
+        }
+    }
+
+    .faqbox__body {
+        padding-right: 10px;
+    }
+   
+    .faqsection {
+        padding-bottom: 60px;
+    }
+
+    .whobenefits__header h2,
+    .faqsection h2,
+    .info__content h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
 }

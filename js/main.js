@@ -97,9 +97,11 @@ $(document).ready(function () {
     $('.refer-popup__close').on('click', function () {
         $('.refer-popup').removeClass('active');
     });
-
-
-
+    
+    $('.faqbox__header').click(function(){
+        $(this).next().slideToggle();
+        $(this).toggleClass('open');
+    })
 
 
 
