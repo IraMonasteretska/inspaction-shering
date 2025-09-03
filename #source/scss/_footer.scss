@@ -9,10 +9,10 @@
 }
 
 .footer__logo {
-    margin-bottom: 41px;
+    margin-bottom: 35px;
 
     img {
-        width: 213px;
+        width: 156px;
         background-size: cover;
     }
 }
@@ -126,6 +126,12 @@
 }
 
 //  --- === ADAPTIVE === --- //
+@media(max-width:1199.8px) {
+    .footer__logo,
+    .footer__copy {
+        margin-bottom: 25px;
+    }
+}
 
 @media (max-width: 991.8px) {
     .footer__inner {

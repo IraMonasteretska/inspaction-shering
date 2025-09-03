@@ -17,7 +17,7 @@ header.header {
 
         .header__logo {
             width: 100%;
-            max-width: 141px;
+            max-width: 156px;
 
             img {
                 width: 100%;
@@ -26,10 +26,11 @@ header.header {
 
         .header__search {
             width: 100%;
-            max-width: calc(100% - 141px);
-            flex: 0 0 calc(100% - 141px);
+            max-width: calc(100% - 156px);
+            flex: 0 0 calc(100% - 156px);
             text-align: right;
             padding-right: 48px;
+            padding-left: 10px;
 
             form {
                 display: inline-block;
@@ -455,11 +456,6 @@ header.header.header__sign {
 
 @media(max-width:1199.8px) {
 
-    header.header .header__leftsect .header__logo {
-        max-width: 120px;
-        flex: 0 0 120px;
-    }
-
     header.header .header__leftsect .header__search {
         padding-right: 0;
     }
@@ -560,13 +556,6 @@ header.header.header__sign {
     .header__leftsect {
         padding-right: 50px;
     }
-
-    header.header .header__leftsect .header__logo {
-        max-width: 140px;
-        flex: 0 0 140px;
-    }
-
-
 
     .menubg {
         background: rgba(#000, 0.5);
@@ -762,7 +751,7 @@ header.header.header__sign {
     }
 
     .menubtn {
-        top: 8px;
+        top: 4px;
     }
 
     header.header .header__leftsect .header__search form button {
