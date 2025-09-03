@@ -418,21 +418,14 @@
 
 
 .refer-popup {
-    position: fixed;
-    left: 0;
-    // bottom: 40px;
+    position: relative;
     width: 100%;
+    margin-top: 68px;
 
-    bottom: -100%;
-    opacity: 0;
-    transition: bottom 0.8s, opacity 0.8s;
-    z-index: 9999;
+  
 }
 
-.refer-popup.active {
-    bottom: 40px;
-    opacity: 1;
-}
+
 
 .refer-popup__wrap {
     border-radius: 10px;
@@ -714,5 +707,8 @@
         line-height: 150%;
     }
 
+    .refer-popup {
+        margin-top: 40px;
+    }
     
 }

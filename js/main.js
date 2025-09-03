@@ -89,13 +89,8 @@ $(document).ready(function () {
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 
-    // banner - product page
-    setTimeout(function () {
-        $('.refer-popup').addClass('active');
-    }, 1500);
-
     $('.refer-popup__close').on('click', function () {
-        $('.refer-popup').removeClass('active');
+        $('.refer-popup').hide();
     });
     
     $('.faqbox__header').click(function(){
